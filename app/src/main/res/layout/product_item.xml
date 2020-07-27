@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginLeft="4dp"
+    android:id="@+id/card_productItem_parent"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/img_product_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="140dp"
+            android:layout_height="160dp" />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="right"
+            tools:text="هارد اکسترنال"
+            android:minLines="2"
+            android:maxLines="2"
+            android:id="@+id/img_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/gray300"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:textSize="10sp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/red"
+            tools:text="2250000 تومان"
+            android:id="@+id/txt_product_prePrcie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="10sp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/green"
+            tools:text="2100000 تومان"
+            android:id="@+id/txt_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
